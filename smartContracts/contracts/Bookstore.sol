@@ -19,7 +19,7 @@ contract Bookstore is ERC1155 {
 
     constructor() ERC1155("https://") {}
 
-    function publish(string _title, uint256 _copies) public {
+    function publish(string memory _title, uint256 _copies) public {
         tokenCounter.increment();
         uint256 currentCounter = tokenCounter.current();
 
