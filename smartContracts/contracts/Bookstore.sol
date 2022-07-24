@@ -17,7 +17,7 @@ contract Bookstore is ERC1155 {
 
     mapping(uint256 => BookDetails) private books;
 
-    constructor() ERC1155("https://") {}
+    constructor() ERC1155("https://ipfs.io/ipfs/QmWVRd29rUWxf1XqSQsf6xaWro1AA5VDJNscWWkyL7M6fp?filename=metadata.json") {}
 
     function publish(string memory _title, uint256 _copies) public {
         tokenCounter.increment();
